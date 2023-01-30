@@ -9,6 +9,9 @@
 Брокер сообщений RabbitMQ настроен по модели pub/sub.
 
 ## Запуск
-Для полноценной работы сервиса необходимы работающие сервисы [product-service](https://github.com/ArtJDev/product-service) и [order-service](https://github.com/ArtJDev/order-service).
+Для полноценной работы сервиса необходимы работающие сервисы [product-service](https://github.com/ArtJDev/product-service), [order-service](https://github.com/ArtJDev/order-service) и Docker контейнер с запущенным брокером RabbtMQ. 
+
+Для запуска контенера с RabbitMQ в контейнере Docker необходимо из [этого](https://github.com/ArtJDev/itbooks-deployment/tree/main/docker) репозитория скачать в папку себе на компьютер скрипт docker-compose.yml и папку rabbitmq с файлом конфигурации. После чего открыть командную строку, перейти в созданную папку и выполнить команду
+`docker-compose up -d itbooks-rabbitmq`. Docker подтянет образ RabbitMQ, настроит его и запустит в контейнере "itbooks-rabbitmq".
 
 Запуск приложения осуществляется командой `./gradlew bootRun`.
