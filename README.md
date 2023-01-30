@@ -1,7 +1,7 @@
 # dispatcher-service (ITBooks)
 Сервис для упаковки и отправки заказов из интернет магазина ITBooks
 
-**Стек: Java 17, Spring WebFlux, Spring Cloud Functions, Spring Cloud Stream, RabbitMQ, Gradle, Docker.**
+**Стек: Java 17, Spring WebFlux, Spring Cloud Function, Spring Cloud Stream, RabbitMQ, Gradle, Docker.**
 ## Описание
 Проект представляет собой микросервис для упаковки и отправки заказов из интернет магазина ITBooks. 
 Сервис взаимодействует с микросервисом [order-service](https://github.com/ArtJDev/order-service), с помощью брокера сообщений RabbitMQ получает от него уведомления о принятых заказах, 
